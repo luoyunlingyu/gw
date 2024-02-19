@@ -1,0 +1,46 @@
+body {
+    background-image: url('https://t.mwm.moe/moez');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgba(240, 240, 240, 0.8);
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 20px 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+h3 {
+    color: rgba(54, 199, 212, 0.653);
+}
+a {
+    color: rgba(53, 227, 189, 0.653);
+}

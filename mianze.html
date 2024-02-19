@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>免责声明</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/png">
+</head>
+
+<body>
+    <div class="container">
+        <h1>免责声明</h1>
+        <p>欢迎访问洛云凌钰工作室网站。在您使用本网站提供的任何服务前，请务必仔细阅读以下免责声明：</p>
+        
+        <h2>免责条款</h2>
+        <p>1. 本工作室所提供的软件下载仅用于个人学习和研究目的，任何商业目的均不得使用。</p>
+        <p>2. 使用本工作室网站服务造成的任何直接或间接损失，本工作室概不负责。</p>
+        <p>3.在下载完的24小时内请删除文件，如出现任何损失，均与本站无关</p>
+        
+        <h2>法律声明</h2>
+        <p>本免责声明适用中华人民共和国法律，如有违反法律规定的行为，本工作室将配合相关部门进行调查。</p>
+        
+        <h2>联系方式</h2>
+        <p>若您对本免责声明内容有任何疑问或建议，请联系我们：luoyunlingyu@foxmail.com</p>
+        
+        <footer>
+            <body>
+                <p>您的IP地址是：</p>
+                <p id="user-ip">正在获取...</p>
+            
+                <script>
+                    fetch('https://api64.ipify.org?format=json')
+                        .then(response => response.json())
+                        .then(data => {
+                            const userIp = data.ip;
+                            document.getElementById('user-ip').textContent = userIp;
+                        })
+                        .catch(error => {
+                            console.error('获取IP地址出错：', error);
+                            document.getElementById('user-ip').textContent = '获取失败';
+                        });
+                </script>
+            </body>
+            <p>&copy; 2024 洛云凌钰工作室 | 友情链接<a href="https://xiaozhangkeji.sblkun.eu.org/">小张科技</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
