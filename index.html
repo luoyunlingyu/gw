@@ -50,25 +50,10 @@
         <a href="ruanjian.html">软件下载站</a> 
         <h2>联系我们</h2>
         <P>如想联系我们，你可以发邮件至luoyunlingyu@foxmail.com，看到后将尽快联系</P>
-
+        <img src="https://tool.lu/netcard/">
         <footer>
             <body>
-                <p>您的IP地址是：</p>
-                <p id="user-ip">正在获取...</p>
-            
-                <script>
-                    fetch('https://api64.ipify.org?format=json')
-                        .then(response => response.json())
-                        .then(data => {
-                            const userIp = data.ip;
-                            document.getElementById('user-ip').textContent = userIp;
-                        })
-                        .catch(error => {
-                            console.error('获取IP地址出错：', error);
-                            document.getElementById('user-ip').textContent = '获取失败';
-                        });
-                </script>
-            </body>
+                
             <p>&copy; 2024 洛云凌钰工作室 | 友情链接<a href="https://xiaozhangkeji.sblkun.eu.org/">小张科技</a></p>
         </footer>
     </div>
